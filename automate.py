@@ -41,13 +41,13 @@ def bom():
                     os.remove("dom1.txt")
                     os.remove("dom2.txt")
                     os.remove("alldomof.txt")
-                    os.system("cp alldom.txt /home/itechnovation/tool/webscreenshot-2.9/webscreenshot")
-                    os.system("cp alldom.txt /home/itechnovation/tool/open-redirect-scanner-master")                  
+                    os.system("cp alldom.txt /home/username/tool/webscreenshot-2.9/webscreenshot")
+                    os.system("cp alldom.txt /home/username/tool/open-redirect-scanner-master")                  
                     os.remove("alldom.txt")
                     """
                     
                     
-                    os.chdir('/home/itechnovation/tool/webscreenshot-2.9/webscreenshot') 
+                    os.chdir('/home/username/tool/webscreenshot-2.9/webscreenshot') 
                     cod1 = "python webscreenshot.py -i "+fil+" -o "+ commandstring + " -w 10 -m"
                     print("[*]Running :"+cod1);
                     sp.Popen('gnome-terminal -e "'+cod1+'"', shell=True)
@@ -82,7 +82,7 @@ with open("maindom.txt") as f:
             f1.write(rep)
 print("[*]Saving into : "+fil);             
 os.remove("maindom.txt")     
-os.system("cp "+fil+" /home/itechnovation/tool/webscreenshot-2.9/webscreenshot") 
+os.system("cp "+fil+" /home/username/tool/webscreenshot-2.9/webscreenshot") 
 print("[*]Sending "+fil+" to: Webscreenshot\n");  
 if g == "y":
    bom()
