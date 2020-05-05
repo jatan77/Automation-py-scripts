@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 
 for i in range(34000, 60000):
-    url="https://kmhd.link/archives/"+str(i)+""
+    url="https://example.com/file/id/"+str(i)+"/data"
     html_content = requests.get(url).text
     soup = BeautifulSoup(html_content, "lxml")
     print(soup.title)
