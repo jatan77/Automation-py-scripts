@@ -44,7 +44,7 @@ for i in range(concurrent):
     t.start()
 try:
     for i in range(50000, 60000):
-        url="https://kmhd.link/archives/"+str(i)+""
+        url="https://example.com/id/file/"+str(i)+""
         q.put(url)
     q.join()
 except KeyboardInterrupt:
